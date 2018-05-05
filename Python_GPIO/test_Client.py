@@ -6,20 +6,26 @@ import socket
 
 
 def main():
-    HOST = '192.168.1.136'
-    PORT = 5472
+    HOST = '192.168.1.3'
+    PORT = 1476
 
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.connect((HOST, PORT))
+    c = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    c.connect((HOST, PORT))
+
 
     try:
         while True:
-            data = s.recv(1024)
-            if len(data) != 0:
-                print(data)
+            GoodsList = c.recv(1024).decode()
+            print(GoodsList)
+            c.send("1")
+            MemberList = c.recv(1024).decode()
+            print(MemberList)
+            c.send("1")
+            time.sleep(600)
+            c.send("Q")
     except:
         pass
-    s.close()
+    c.close()
 
 # ================================
 

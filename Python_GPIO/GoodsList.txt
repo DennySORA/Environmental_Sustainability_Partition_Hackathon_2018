@@ -1,0 +1,7 @@
+{
+  "AllGoodsList": [
+    { "GoodsName": "我家牛排9折券", "Price": 50, "Amount": 17 },
+    { "GoodsName": "95炸醬麵95折", "Price": 10, "Amount": 200 },
+    { "GoodsName": "麥當勞大薯買一送一", "Price": 80, "Amount": 237 }
+  ]
+}

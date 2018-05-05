@@ -6,8 +6,8 @@ import socket
 
 
 def main():
-    HOST = '192.168.1.136'
-    PORT = 5472
+    HOST = ''
+    PORT = 1476
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.bind((HOST, PORT))
@@ -15,17 +15,27 @@ def main():
 
     print('Server start at: {0}:{1}'.format(HOST, PORT))
     print('wait for connection...')
+    
+    conn, addr = s.accept() 
 
-    try:
-        while True:
-            conn, addr = s.accept()
-            print('Connected by ', addr)
-            while True:
-                data = conn.recv(1024)
-                print(data.decode("utf-8"))
-                conn.send("server received you message.".encode())
-    except:
-        print("close server")
+    while True:
+        
+        print('Connected by ', addr)
+
+        List_Data1 = open("GoodsList.txt", "r", encoding='utf-8').read()
+        conn.send(List_Data1.encode())
+        if conn.recv(1024).decode() != "1":
+            continue
+
+        List_Data2 = open("MemberList.txt", "r", encoding='utf-8').read()
+        conn.send(List_Data2.encode())
+        if conn.recv(1024).decode() != "1":
+            continue
+        
+        if conn.recv(1024) == "Q":
+            pass
+
+    print("close server")
     conn.close()
 
 # ================================
