@@ -8,8 +8,10 @@ import socket
 HOST = '192.168.1.136'
 PORT = 5472
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect((HOST, PORT))
-
+try:
+    s.connect((HOST, PORT))
+except:
+    pass
 
 def index(request):
     return render(request, 'index.html')
@@ -32,5 +34,11 @@ def idea(request):
 
 
 def asktime(request):
-    data = s.recv(1024)
+    try:
+        data = s.recv(1024)
+        if data <= 0:
+            data = 0
+    except:
+        data = 0
+    
     return HttpResponse(data)

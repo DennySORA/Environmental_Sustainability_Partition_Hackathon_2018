@@ -26,21 +26,22 @@ class Batch_Threading(threading.Thread):
         self.ID = ID
 
     def run(self):
-        global i, s, index_T
-        conn, addr = s.accept()
-        print('Connected by ', addr)
+        while True:
+            global i, s, index_T
+            conn, addr = s.accept()
+            print('Connected by ', addr)
 
-        try:
-            while True:
-                time.sleep(0.1)
-                if index_T[self.ID] == True:
-                    index_T[self.ID] = False
-                    conn.send(str(i).encode())
-                    print("Is send Data", i, "\nThis is ID :", self.ID)
+            try:
+                while True:
                     time.sleep(0.1)
-        except:
-            pass
-        conn.close()
+                    if index_T[self.ID] == True:
+                        index_T[self.ID] = False
+                        conn.send(str(i).encode())
+                        print("Is send Data", i, "\nThis is ID :", self.ID)
+                        time.sleep(0.1)
+            except:
+                pass
+            conn.close()
 
 
 def main():

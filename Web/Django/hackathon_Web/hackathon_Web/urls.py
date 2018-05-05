@@ -26,5 +26,4 @@ urlpatterns = [
     path("asktime/",App.asktime,name='asktime'),
     path("intorduc/",App.intorduc),
     path("idea/",App.idea),
-    
 ]
