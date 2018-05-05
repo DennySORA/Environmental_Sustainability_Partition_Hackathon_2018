@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackzon", "Hackzon\Hackzon.csproj", "{35DFF827-2B56-4612-BF7F-A82819A68F94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35DFF827-2B56-4612-BF7F-A82819A68F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35DFF827-2B56-4612-BF7F-A82819A68F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35DFF827-2B56-4612-BF7F-A82819A68F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35DFF827-2B56-4612-BF7F-A82819A68F94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {582BBC28-3D8C-466A-9C0D-C7AF4CF73430}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+C:\Users\johnson\source\repos\Hackzon\Hackzon\bin\Debug\Hackzon.exe.config
+C:\Users\johnson\source\repos\Hackzon\Hackzon\bin\Debug\Hackzon.exe
+C:\Users\johnson\source\repos\Hackzon\Hackzon\bin\Debug\Hackzon.pdb
+C:\Users\johnson\source\repos\Hackzon\Hackzon\obj\Debug\Hackzon.csprojResolveAssemblyReference.cache
+C:\Users\johnson\source\repos\Hackzon\Hackzon\obj\Debug\Hackzon.Form1.resources
+C:\Users\johnson\source\repos\Hackzon\Hackzon\obj\Debug\Hackzon.Properties.Resources.resources
+C:\Users\johnson\source\repos\Hackzon\Hackzon\obj\Debug\Hackzon.csproj.GenerateResource.cache
+C:\Users\johnson\source\repos\Hackzon\Hackzon\obj\Debug\Hackzon.csproj.CoreCompileInputs.cache
+C:\Users\johnson\source\repos\Hackzon\Hackzon\obj\Debug\Hackzon.exe
+C:\Users\johnson\source\repos\Hackzon\Hackzon\obj\Debug\Hackzon.pdb
+C:\Users\johnson\source\repos\Hackzon\Hackzon\bin\Debug\Newtonsoft.Json.dll
+C:\Users\johnson\source\repos\Hackzon\Hackzon\bin\Debug\Newtonsoft.Json.xml
+C:\Users\johnson\source\repos\Hackzon\Hackzon\obj\Debug\Hackzon.csproj.CopyComplete

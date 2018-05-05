@@ -1,0 +1,1 @@
+{"AllMemberList":[{"UserName":"johnson","Point":11,"Level":"使用者","MemberGoodsList":{"AllGoodsList":[{"GoodsName":"我家牛排9折券","Price":-1,"Amount":3},{"GoodsName":"麥當勞大薯買一送一","Price":-1,"Amount":13},{"GoodsName":"肯德基蛋塔兌換券","Price":-1,"Amount":3},{"GoodsName":"pasta飲料兌換券","Price":-1,"Amount":3},{"GoodsName":"海味海產9折券","Price":-1,"Amount":3}]}}]}
