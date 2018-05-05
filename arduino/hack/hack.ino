@@ -23,10 +23,7 @@ void loop() {
       count=0;
 //      Serial.println(analogRead(A0));
       adc_value=analogRead(A0);
-      Serial.print(adc_value);
-      Serial.print("   ");
-      Serial.println(adc_value_last);
-      delay(100);
+      delay(50);
       if(adc_value_last<30 && adc_value>=60)
       {        
         trig=1;
