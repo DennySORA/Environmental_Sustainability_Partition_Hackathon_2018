@@ -34,6 +34,13 @@ body {
   display: inline;
   margin-right: 25px;
 }
+/*========TOP_Bar_right================================*/
+.Top_Bar_Right {
+  top: 5px;
+  right: 30px;
+  position: absolute;
+}
+
 /*========================================*/
 /* index */
 /*========================================*/
@@ -138,5 +145,3 @@ body {
   left: 85%;
   position: relative;
 }
-
-
