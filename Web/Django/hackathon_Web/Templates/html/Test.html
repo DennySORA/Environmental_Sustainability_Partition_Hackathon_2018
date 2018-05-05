@@ -1,0 +1,30 @@
+{% extends './base.htm' %}
+
+{% block title %}黑客松 - 測試{% endblock %}
+
+{% block title_Main %}系統測試{% endblock %} 
+
+{% block title_log %}很麻煩的系統{% endblock %} 
+
+{% block head %}
+
+<script type="text/javascript">
+    function clocktime(){ //定义一个函数
+        $.ajax({                   
+            url:"{% url "asktime" %}", 		
+            success:function(result){$("#ask").html(result);}
+        });
+        setTimeout("clocktime();", 1000);  //设置为每1s刷新1次
+    }
+    $(document).ready(function(){               
+        clocktime() 
+    });
+</script>
+
+{% endblock %} 
+
+{% block main %}
+
+<div id="ask"><h2></h2></div>
+
+{% endblock %}

@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-family: DFKai-sb;
+  -moz-background-size: cover;
+  background-size: cover;
+  overflow: auto;
+}
+/*=========Header_Top===============================*/
+
+.Header_Top {
+  height: 70px;
+  padding: 2px 2px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.Header_Top a {
+  text-decoration: none;
+  color: rgba(179, 179, 179, 0.8);
+}
+.Header_Top ul {
+  list-style: none;
+}
+/*=========TOP_Bar===============================*/
+.Top_Bar {
+  top: 5px;
+  left: -10px;
+  position: absolute;
+}
+.Top_Bar a {
+  text-decoration: none;
+  display: table-row;
+}
+.Top_Bar ul li {
+  display: inline;
+  margin-right: 25px;
+}
+/*========================================*/
+/* index */
+/*========================================*/
+
+/*========Main_Top================================*/
+.Main_Top {
+  height: 150px;
+  padding: 2px 2px;
+  background-color: white;
+  -moz-box-shadow: 4px 4px 12px -2px rgba(20%, 20%, 40%, 0.5);
+  -webkit-box-shadow: 4px 4px 12px -2px rgba(20%, 20%, 40%, 0.5);
+  box-shadow: 4px 4px 12px -2px rgba(20%, 20%, 40%, 0.5);
+}
+.Main_Top span {
+  left: 12%;
+  line-height: 24px;
+  position: relative;
+}
+.Main_Top a{
+  text-decoration:none; 
+  color: black;
+}
+.Main_Top img {
+  left: 10%;
+  float: left;
+  width: 150px;
+  position: relative;
+  border-radius: 50%;
+  -moz-box-shadow: 2px 2px 2px rgba(20%, 20%, 40%, 0.6),
+    4px 4px 6px rgba(20%, 20%, 40%, 0.4), 6px 6px 12px rgba(20%, 20%, 40%, 0.4);
+  -webkit-box-shadow: 2px 2px 2px rgba(20%, 20%, 40%, 0.6),
+    4px 4px 6px rgba(20%, 20%, 40%, 0.4), 6px 6px 12px rgba(20%, 20%, 40%, 0.4);
+  box-shadow: 2px 2px 2px rgba(20%, 20%, 40%, 0.6),
+    4px 4px 6px rgba(20%, 20%, 40%, 0.4), 6px 6px 12px rgba(20%, 20%, 40%, 0.4);
+}
+
+/*========================================*/
+/* about me */
+/*========================================*/
+.About_Me_Main {
+  margin-left: 20%;
+  position: relative;
+}
+.About_Me_Main h1 {
+  margin-left: 35%;
+  position: relative;
+}
+.About_Me_Main h3 {
+  margin-left: 2%;
+}
+.About_Me_Main h4 {
+  margin-left: 4%;
+}
+.About_Me_Main ul {
+  margin-left: 6%;
+}
+.contact p {
+  margin-left: 6%;
+}
+
+/*========================================*/
+/* contact */
+/*========================================*/
+.Contact_Main {
+  margin-left: 10%;
+  margin-right: 37%;
+  height: 750px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+.Contact_inside {
+  margin-left: 10%;
+}
+.Contact_inside label {
+  top: 5px;
+  position: relative;
+}
+.Contact_inside h2{
+  margin-left: 33%;
+}
+/*========Form-Group input, textarea===================*/
+.Form-Group input,
+.Form-Group textarea {
+  display: block;
+  width: 85%;
+  margin-top: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.Form-Group textarea {
+  height: 200px;
+}
+.Form-Group input {
+  height: 20px;
+}
+/*========Botton_Contact==============================*/
+.Botton_Contact {
+  display: block;
+  left: 85%;
+  position: relative;
+}

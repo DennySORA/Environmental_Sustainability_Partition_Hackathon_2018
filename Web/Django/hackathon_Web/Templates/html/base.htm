@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %} 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="/Templates/css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="/Templates/js/jquery-3.3.1.js"></script>
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+    <!-- -------------------------------------------------------- -->
+    <header>
+        <div class="Header_Top">
+            <tr>
+                <div class="Top_Bar">
+                    <ul>
+                        <li>
+                            <a href="/">首頁</a>
+                        </li>
+                        <li>
+                            <a href="/intorduc">介紹</a>
+                        </li>
+                        <li>
+                            <a href="/idea">思想</a>
+                        </li>
+                        <li>
+                            <a href="/Test">實作</a>
+                        </li>
+                        <li>
+                            <a href="/about_me">關於我們</a>
+                        </li>
+                    </ul>
+                </div>
+            </tr>
+        </div>
+        <!-- -------------------------------------------------------- -->
+        <div class="Main_Top">
+            <img src="/Templates/img/Top.jpg"/>
+            <h1>
+                <span>
+                    <a href="">{% block title_Main %}{% endblock %}</a>
+                </span>
+            </h1>
+            <h5>
+                <span>{% block title_log %}{% endblock %}</span>
+            </h5>
+        </div>
+
+    </header>
+    <!-- -------------------------------------------------------- -->
+    {% block main %}{% endblock %}
+</body>
+
+</html>
