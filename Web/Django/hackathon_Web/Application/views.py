@@ -8,15 +8,6 @@ import json2html
 # Create your views here.
 
 
-HOST = '192.168.1.136'
-PORT = 5472
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-try:
-    s.connect((HOST, PORT))
-except:
-    pass
-
-
 def index(request):
     return render(request, 'index.html')
 
@@ -40,14 +31,3 @@ def intorduc(request):
 
 def idea(request):
     return render(request, 'html/idea.html')
-
-
-def asktime(request):
-    try:
-        data = s.recv(1024)
-        if data <= 0:
-            data = 0
-    except:
-        data = 0
-
-    return HttpResponse(data)

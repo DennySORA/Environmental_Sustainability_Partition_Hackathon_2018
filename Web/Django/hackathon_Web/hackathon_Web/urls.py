@@ -23,7 +23,6 @@ urlpatterns = [
     path("", App.index),
     path("about_me/", App.about_me),
     path("Test/", App.Test),
-    path("asktime/",App.asktime,name='asktime'),
     path("intorduc/",App.intorduc),
     path("idea/",App.idea),
 ]
