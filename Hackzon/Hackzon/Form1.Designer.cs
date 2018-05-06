@@ -47,8 +47,6 @@
 			this._userPointLabel = new System.Windows.Forms.Label();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this._ownView = new System.Windows.Forms.DataGridView();
-			this._ownGoodsNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this._ownGoodsAmountColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this._page3 = new System.Windows.Forms.TabPage();
 			this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
 			this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -71,6 +69,9 @@
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.label7 = new System.Windows.Forms.Label();
+			this._ownGoodsNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this._ownGoodsAmountColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this._useGoodsButton = new System.Windows.Forms.DataGridViewButtonColumn();
 			this._page4.SuspendLayout();
 			this._page1.SuspendLayout();
 			this.tableLayoutPanel1.SuspendLayout();
@@ -284,7 +285,8 @@
 			this._ownView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this._ownView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this._ownGoodsNameColumn,
-            this._ownGoodsAmountColumn});
+            this._ownGoodsAmountColumn,
+            this._useGoodsButton});
 			this._ownView.Dock = System.Windows.Forms.DockStyle.Fill;
 			this._ownView.Location = new System.Drawing.Point(3, 18);
 			this._ownView.Name = "_ownView";
@@ -292,16 +294,7 @@
 			this._ownView.RowTemplate.Height = 24;
 			this._ownView.Size = new System.Drawing.Size(250, 144);
 			this._ownView.TabIndex = 3;
-			// 
-			// _ownGoodsNameColumn
-			// 
-			this._ownGoodsNameColumn.HeaderText = "優惠名稱";
-			this._ownGoodsNameColumn.Name = "_ownGoodsNameColumn";
-			// 
-			// _ownGoodsAmountColumn
-			// 
-			this._ownGoodsAmountColumn.HeaderText = "數量";
-			this._ownGoodsAmountColumn.Name = "_ownGoodsAmountColumn";
+			this._ownView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.UseGoods);
 			// 
 			// _page3
 			// 
@@ -544,6 +537,23 @@
 			this.label7.TabIndex = 3;
 			this.label7.Text = " 作者:";
 			// 
+			// _ownGoodsNameColumn
+			// 
+			this._ownGoodsNameColumn.HeaderText = "優惠名稱";
+			this._ownGoodsNameColumn.Name = "_ownGoodsNameColumn";
+			// 
+			// _ownGoodsAmountColumn
+			// 
+			this._ownGoodsAmountColumn.HeaderText = "數量";
+			this._ownGoodsAmountColumn.Name = "_ownGoodsAmountColumn";
+			// 
+			// _useGoodsButton
+			// 
+			this._useGoodsButton.HeaderText = "";
+			this._useGoodsButton.Name = "_useGoodsButton";
+			this._useGoodsButton.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+			this._useGoodsButton.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -614,8 +624,6 @@
 		private System.Windows.Forms.Label _userPointLabel;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.DataGridView _ownView;
-		private System.Windows.Forms.DataGridViewTextBoxColumn _ownGoodsNameColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn _ownGoodsAmountColumn;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.GroupBox groupBox2;
 		private System.Windows.Forms.PictureBox pictureBox1;
@@ -623,6 +631,9 @@
 		private System.Windows.Forms.GroupBox groupBox3;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.PictureBox pictureBox2;
+		private System.Windows.Forms.DataGridViewTextBoxColumn _ownGoodsNameColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn _ownGoodsAmountColumn;
+		private System.Windows.Forms.DataGridViewButtonColumn _useGoodsButton;
 	}
 }
 

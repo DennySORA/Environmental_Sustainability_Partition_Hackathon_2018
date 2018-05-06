@@ -97,7 +97,7 @@ namespace Hackzon
 			{
 				string name = _model.MemberList.AllMemberList[index].MemberGoodsList.AllGoodsList[i].GoodsName;
 				int amount = _model.MemberList.AllMemberList[index].MemberGoodsList.AllGoodsList[i].Amount;
-				_ownView.Rows.Add(name, amount);
+				_ownView.Rows.Add(name, amount, "使用");
 			}
 		}
 		//*
@@ -136,6 +136,22 @@ namespace Hackzon
 			int price = int.Parse(_addPriceTextbox.Text);
 			int amount = int.Parse(_addAmountTextbox.Text);
 			_model.AddGoods(name, price, amount);
+			Update();
+		}
+
+		private void UseGoods(object sender, DataGridViewCellEventArgs e)
+		{
+			int index = e.RowIndex;
+			DialogResult dialogResult = MessageBox.Show("是否確定使用?", "真的要使用!?", MessageBoxButtons.YesNo);
+			if (dialogResult == DialogResult.Yes)
+			{
+				_model.MemberList.AllMemberList[0].MemberGoodsList.DecreaseAmoount(index);
+			}
+			else if (dialogResult == DialogResult.No)
+			{
+				
+			}
+			UpdateUserOwnList(0);
 			Update();
 		}
 	}
