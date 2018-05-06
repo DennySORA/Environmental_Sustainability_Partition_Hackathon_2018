@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this._page4 = new System.Windows.Forms.TabControl();
 			this._page1 = new System.Windows.Forms.TabPage();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -64,8 +65,15 @@
 			this._editAmountColume = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this._deleteButton = new System.Windows.Forms.DataGridViewButtonColumn();
 			this.label6 = new System.Windows.Forms.Label();
+			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
+			this.groupBox3 = new System.Windows.Forms.GroupBox();
+			this.label7 = new System.Windows.Forms.Label();
 			this._page4.SuspendLayout();
 			this._page1.SuspendLayout();
+			this.tableLayoutPanel1.SuspendLayout();
 			this._page2.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this._goodsView)).BeginInit();
@@ -77,6 +85,11 @@
 			this.tableLayoutPanel3.SuspendLayout();
 			this.tableLayoutPanel4.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this._editView)).BeginInit();
+			this.groupBox2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			this.tableLayoutPanel6.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			this.groupBox3.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// _page4
@@ -107,13 +120,15 @@
 			// 
 			this.tableLayoutPanel1.ColumnCount = 2;
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel1.Location = new System.Drawing.Point(130, 53);
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 235F));
+			this.tableLayoutPanel1.Controls.Add(this.groupBox2, 0, 0);
+			this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 1, 0);
+			this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
 			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-			this.tableLayoutPanel1.RowCount = 2;
+			this.tableLayoutPanel1.RowCount = 1;
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel1.Size = new System.Drawing.Size(330, 232);
+			this.tableLayoutPanel1.Size = new System.Drawing.Size(673, 418);
 			this.tableLayoutPanel1.TabIndex = 0;
 			// 
 			// _page2
@@ -199,7 +214,7 @@
 			this.tableLayoutPanel5.ColumnCount = 3;
 			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.53846F));
 			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.46154F));
-			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
+			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 84F));
 			this.tableLayoutPanel5.Controls.Add(this.label4, 0, 0);
 			this.tableLayoutPanel5.Controls.Add(this.label5, 0, 1);
 			this.tableLayoutPanel5.Controls.Add(this._userNameLabel, 2, 0);
@@ -238,18 +253,18 @@
 			// 
 			this._userNameLabel.AutoSize = true;
 			this._userNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-			this._userNameLabel.Location = new System.Drawing.Point(169, 0);
+			this._userNameLabel.Location = new System.Drawing.Point(168, 0);
 			this._userNameLabel.Name = "_userNameLabel";
-			this._userNameLabel.Size = new System.Drawing.Size(78, 25);
+			this._userNameLabel.Size = new System.Drawing.Size(79, 25);
 			this._userNameLabel.TabIndex = 2;
 			// 
 			// _userPointLabel
 			// 
 			this._userPointLabel.AutoSize = true;
 			this._userPointLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-			this._userPointLabel.Location = new System.Drawing.Point(169, 25);
+			this._userPointLabel.Location = new System.Drawing.Point(168, 25);
 			this._userPointLabel.Name = "_userPointLabel";
-			this._userPointLabel.Size = new System.Drawing.Size(78, 31);
+			this._userPointLabel.Size = new System.Drawing.Size(79, 31);
 			this._userPointLabel.TabIndex = 3;
 			// 
 			// groupBox1
@@ -456,6 +471,79 @@
 			this.label6.TabIndex = 7;
 			this.label6.Text = "廣告";
 			// 
+			// groupBox2
+			// 
+			this.groupBox2.BackColor = System.Drawing.Color.MintCream;
+			this.groupBox2.Controls.Add(this.pictureBox1);
+			this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.groupBox2.Location = new System.Drawing.Point(3, 3);
+			this.groupBox2.Name = "groupBox2";
+			this.groupBox2.Size = new System.Drawing.Size(432, 412);
+			this.groupBox2.TabIndex = 0;
+			this.groupBox2.TabStop = false;
+			this.groupBox2.Text = "作品動機";
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+			this.pictureBox1.Location = new System.Drawing.Point(3, 18);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(426, 391);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox1.TabIndex = 0;
+			this.pictureBox1.TabStop = false;
+			// 
+			// tableLayoutPanel6
+			// 
+			this.tableLayoutPanel6.ColumnCount = 1;
+			this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.tableLayoutPanel6.Controls.Add(this.groupBox3, 0, 0);
+			this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.tableLayoutPanel6.Location = new System.Drawing.Point(441, 3);
+			this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+			this.tableLayoutPanel6.RowCount = 2;
+			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 308F));
+			this.tableLayoutPanel6.Size = new System.Drawing.Size(229, 412);
+			this.tableLayoutPanel6.TabIndex = 1;
+			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+			this.pictureBox2.Location = new System.Drawing.Point(14, 93);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(192, 272);
+			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox2.TabIndex = 0;
+			this.pictureBox2.TabStop = false;
+			// 
+			// groupBox3
+			// 
+			this.groupBox3.BackColor = System.Drawing.Color.MintCream;
+			this.groupBox3.Controls.Add(this.label7);
+			this.groupBox3.Controls.Add(this.pictureBox2);
+			this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.groupBox3.Location = new System.Drawing.Point(3, 3);
+			this.groupBox3.Name = "groupBox3";
+			this.tableLayoutPanel6.SetRowSpan(this.groupBox3, 2);
+			this.groupBox3.Size = new System.Drawing.Size(223, 406);
+			this.groupBox3.TabIndex = 1;
+			this.groupBox3.TabStop = false;
+			this.groupBox3.Text = "作者介紹";
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.BackColor = System.Drawing.Color.LemonChiffon;
+			this.label7.Font = new System.Drawing.Font("微軟正黑體", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.label7.ForeColor = System.Drawing.Color.DarkSlateGray;
+			this.label7.Location = new System.Drawing.Point(15, 43);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(112, 47);
+			this.label7.TabIndex = 3;
+			this.label7.Text = " 作者:";
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -463,9 +551,10 @@
 			this.ClientSize = new System.Drawing.Size(687, 450);
 			this.Controls.Add(this._page4);
 			this.Name = "Form1";
-			this.Text = "Form1";
+			this.Text = "撿垃圾GO";
 			this._page4.ResumeLayout(false);
 			this._page1.ResumeLayout(false);
+			this.tableLayoutPanel1.ResumeLayout(false);
 			this._page2.ResumeLayout(false);
 			this.tableLayoutPanel2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this._goodsView)).EndInit();
@@ -480,6 +569,12 @@
 			this.tableLayoutPanel4.ResumeLayout(false);
 			this.tableLayoutPanel4.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this._editView)).EndInit();
+			this.groupBox2.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			this.tableLayoutPanel6.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+			this.groupBox3.ResumeLayout(false);
+			this.groupBox3.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -522,6 +617,12 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn _ownGoodsNameColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn _ownGoodsAmountColumn;
 		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.GroupBox groupBox2;
+		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+		private System.Windows.Forms.GroupBox groupBox3;
+		private System.Windows.Forms.Label label7;
+		private System.Windows.Forms.PictureBox pictureBox2;
 	}
 }
 
