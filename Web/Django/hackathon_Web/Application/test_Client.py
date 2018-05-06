@@ -6,7 +6,7 @@ import socket
 
 
 def main():
-    HOST = '192.168.1.100'
+    HOST = '192.168.1.3'
     PORT = 1476
 
     c = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -25,7 +25,7 @@ def main():
         Data.write("["+GoodsList + "," + MemberList+"]")
         Data.close()
 
-        time.sleep(60)
+        time.sleep(10)
         c.send("Q".encode())
     c.close()
 

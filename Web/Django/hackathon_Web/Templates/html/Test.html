@@ -7,7 +7,12 @@
 {% block title_log %}很麻煩的系統{% endblock %} 
 
 {% block head %}
-
+<script language="JavaScript">
+    function myrefresh() {
+        window.location.reload();
+    }
+    setTimeout('myrefresh()', 7000); 
+</script>
 <link href="/Templates/css/bootstrap.css" rel="stylesheet">
 
 {% endblock %} 
